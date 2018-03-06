@@ -1,0 +1,14 @@
+<h2>マイページ</h2>
+
+    <h4>ユーザー情報</h4>
+    <p id="userinfo"></p>
+
+    <form id="my_form" enctype="multipart/form-data">
+        <h4>期間で検索</h4>
+        <input id='date' type="date" name="" value="">
+        <button type="button" onclick="searchDate()">検索</button>
+    </form>
+
+    <p id="searchResult"></p>
+
+<?php echo $this->tag->javascriptInclude('/public/js/mypage.js');?>
